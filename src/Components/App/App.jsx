@@ -31,7 +31,7 @@ import AccountPage from '../../Pages/AccountPage/AccountPage';
 import BlogVideo from '../../Pages/BlogVideo/BlogVideo.jsx';
 import ErrorMessage from '../ErrorMessage/ErrorMessage.jsx';
 
-export const api = 'https://rising-notes.tw1.su/';
+export const api = process.env.REACT_APP_API_ENDPOINT;
 
 export const axiosAuthorized = axios.create({
     baseURL: api,
